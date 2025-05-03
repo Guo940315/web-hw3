@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: #00B900;
+}
+
+.logo-text span {
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.extra-links {
+    margin-left: 20px;
+    color: #999;
+    font-size: 12px;
+}
+
+/* Main login form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.login-box {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo-sim {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.login-box h1 {
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-group .pwd-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    color: #666;
+}
+
+.remember {
+    font-size: 14px;
+}
+
+.tip {
+    font-size: 12px;
+    color: #999;
+    margin-top: -12px;
+}
+
+.quick-links {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quick-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.quick-links span {
+    margin: 0 6px;
+    color: #999;
+}
+
+.submit-btn {
+    background-color: #ccc;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: not-allowed;
+}

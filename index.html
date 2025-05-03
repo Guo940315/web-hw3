@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LINE Bank 登入</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo-text">LINE <span>Bank</span></div>
+    <nav class="nav-links">
+        <a href="#">關於我們</a>
+        <a href="#">產品介紹</a>
+        <a href="#">理財網</a>
+        <a href="#">查詢與下載</a>
+        <a href="#">支援服務</a>
+        <a href="#">公告訊息</a>
+        <div class="extra-links">
+            <a href="#">登入</a>
+            <span>｜</span>
+            <a href="#">LINE Bank 友善網銀</a>
+        </div>
+    </nav>
+</header>
+
+<main class="login-container">
+    <div class="login-box">
+        <div class="logo-sim">🔷</div>
+        <h1>登入</h1>
+        <form>
+            <input type="text" placeholder="身分證字號" required>
+            <input type="text" placeholder="使用者代號" required>
+            <div class="password-group">
+                <input type="password" placeholder="密碼" required>
+                <span class="pwd-icon">⌨️</span>
+            </div>
+            <label class="remember">
+                <input type="checkbox"> 記住我的身分證字號
+            </label>
+            <p class="tip">使用共用電腦時，請勿讓瀏覽器記下登入相關資訊。</p>
+            <div class="quick-links">
+                <a href="#">忘記使用者代號</a>
+                <span>．</span>
+                <a href="#">忘記密碼</a>
+                <span>．</span>
+                <a href="#">常見問題</a>
+            </div>
+            <button type="submit" class="submit-btn" disabled>登入</button>
+        </form>
+    </div>
+</main>
+<script src="java.js"></script>
+</body>
+</html>
