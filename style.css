@@ -14,10 +14,10 @@ body {
     border-bottom: 1px solid #e0e0e0;
 }
 
-.logo-text {
-    font-weight: bold;
-    font-size: 24px;
-    color: #00B900;
+.logo {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
 }
 
 .logo-text span {
@@ -34,6 +34,10 @@ body {
     text-decoration: none;
     color: #333;
     font-size: 14px;
+    transition: all 0.3s;
+}
+.nav-links a:hover {
+    color: #3d9e81;
 }
 
 .extra-links {
@@ -42,7 +46,10 @@ body {
     font-size: 12px;
 }
 
-/* Main login form */
+.extra-links a {
+    color: #999999;
+}
+
 .login-container {
     display: flex;
     justify-content: center;
@@ -57,13 +64,13 @@ body {
 }
 
 .logo-sim {
-    font-size: 48px;
-    margin-bottom: 16px;
+    width: 70%;
+    height: auto;
 }
 
 .login-box h1 {
-    font-size: 28px;
-    margin-bottom: 32px;
+    font-size: 36px;
+    margin: 0;
 }
 
 form {
@@ -76,7 +83,7 @@ form {
 input[type="text"],
 input[type="password"] {
     padding: 12px;
-    font-size: 16px;
+    font-size: 12px;
     border: none;
     border-bottom: 1px solid #ccc;
     outline: none;
@@ -128,4 +135,35 @@ input[type="password"] {
     border: none;
     border-radius: 6px;
     cursor: not-allowed;
+}
+
+.site-footer {
+    background-color: #000;
+    color: #999999;
+    padding: 30px;
+    font-size: 12px;
+}
+
+.site-footer a {
+    color: #999999;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-top, .footer-middle {
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.footer-icons img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
 }

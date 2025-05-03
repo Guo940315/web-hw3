@@ -1,17 +1,20 @@
-// 取得 DOM 元素
 const passwordInput = document.querySelector('.password-group input');
 const toggleIcon = document.querySelector('.pwd-icon');
 const inputs = document.querySelectorAll('input');
 const loginButton = document.querySelector('.submit-btn');
+const logo = document.querySelector('.logo');
 
-// 切換密碼顯示/隱藏
+logo.addEventListener('click', () => {
+    location.reload();
+});
+
 toggleIcon.addEventListener('click', () => {
     const type = passwordInput.type === 'password' ? 'text' : 'password';
     passwordInput.type = type;
     toggleIcon.textContent = type === 'password' ? '⌨️' : '🙈';
 });
 
-// 監聽輸入框變化，啟用按鈕
+
 inputs.forEach(input => {
     input.addEventListener('input', () => {
         const allFilled = [...inputs]
