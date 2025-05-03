@@ -5,7 +5,6 @@ body {
     color: #333;
 }
 
-/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -158,12 +157,5 @@ input[type="password"] {
     width: 24px;
     height: 24px;
     margin: 0 8px;
-    filter: grayscale(100%);
-    transition: filter 0.3s, transform 0.3s;
     cursor: pointer;
-}
-
-.footer-icons img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.1);
 }
